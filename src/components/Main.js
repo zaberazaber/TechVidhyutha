@@ -57,14 +57,22 @@ class Main extends Component {
             </details>
         </section>
         <section className="cardWrapper">
+            
             <div className="Card" id="1" onClick={this.flip}>
                 <div className={"Card-Front"+flippedCSS}>
-                <h3>Mallem</h3>
+                <h3>Why Tech Vaidhyutha?</h3>
+                <img className= "why-wrapper"></img>
                 </div>
                 <div className={"Card-Back"+flippedCSS}>
-                {"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dolores facilis perspiciatis. Excepturi temporibus laborum odio possimus error."}
+                <h3 className="why-tech-iduyatha"> Students who are finding difficult to strike a balance with regular classes and who have the zeal of learning new things can choose Tech Vaidhyutha for up skilling themselves in order to stay more competitive in the present world. 
+                    <br/> 
+                    <br/>
+                    Our short elucidating videos minimize technical jargons with detailed illustrations and animations which helps in conveying the essentials of each topic’s with on- demand education. 
+                    Our main motto is to inspire young engineers to inculcate more technical skills.
+                </h3>
                 </div>
-                </div>
+            </div>
+            
         </section>
         </main>
     );

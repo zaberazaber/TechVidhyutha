@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 import Main from './components/Main'
+import Map from './components/Map'
 import './App.scss';
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
     this.state = {
       activeTab: 1
     }
+    
   }
 
   toggle = (tab) => {
@@ -18,6 +20,7 @@ class App extends Component {
     }
   }
 
+  
   render() {
     return (
       <div className="mainWrapper">
@@ -31,7 +34,20 @@ class App extends Component {
           <Main />
         <footer className="footerWrapper">
           <div class="footer-left">
+            
               <div className="logo"></div>
+               <div class="footer-right col-md-4 col-sm-6">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <span><span>&nbsp;&nbsp;</span>161, Seshadripuram Main Rd, DN Ramaiah Layout, Guttahalli, </span> Bengaluru, Karnataka 560020
+              </div>
+              <div>
+                <i class="fa fa-phone"></i> <span>&nbsp;&nbsp;</span> (+91) 9392106419
+              </div>
+              <div>
+                <i class="fa fa-envelope"></i> <span>&nbsp;&nbsp;</span> tech.vaidhyutha@gmail.com
+              </div>
+              </div>
               <p>Copyright 2020 Teah Vaidhyutha |  All Rights Reserved</p>
               <div class="footer-social-icons">
                 <h4 class="_14">Follow us on</h4>

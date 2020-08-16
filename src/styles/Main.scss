@@ -65,30 +65,35 @@
 	font-weight: bold;
 }
   
-  .cardWrapper {
-	  padding-top: 30px;
-  }
+.cardWrapper {
+	padding-top: 30px;
+}
+
 
   body {
 	background-color: #0C0C0C;
 	font-family: 'Noto Sans', sans-serif;
   }
   
-  $card-size: 12rem;
+  $card-size: 25rem;
   $flip-duration: 1s;
   $perspective: 15rem;
   $degree: 90deg;
   .Card {
 	margin: 1rem;
+	// margin-left: 5rem;
+	text-align: left;
+	width: 50%;
 	display: inline-block;
 	cursor: pointer;
 	
 	.Card-Front,
 	.Card-Back {
-	  width: $card-size;
+	  width: 40rem;
 	  height: $card-size;
 	  text-align: center;
 	  margin-bottom: -$card-size / 2;
+	  border: 1px solid;
 	  
 	  p {
 		margin: 0;
@@ -96,16 +101,20 @@
 	  }
 	  h3 {
 		padding: 0 2rem;
-		position: relative;
 		top: 2rem;
 	  }
+	}
+
+	.why-tech-iduyatha{
+		text-align: justify;
+  		text-justify: inter-word;
 	}
 	
 	.Card-Front {
 	  position: relative;
 	  z-index: 1;
-	  color: #69969C;
-	  background-color: #0E464E;
+	  background-color: skyblue;
+	  color: #FFFFFF;
 	  
 	  // Animations
 	  &.Card-Back-Flip {
@@ -133,7 +142,7 @@
 	  z-index: -1;
 	  top: -$card-size / 2;
 	  color: #012E34;
-	  background-color: #69969C;
+	  background-color: #FFFFFF;
 	  
 	  // Animations
 	  transform: rotateY(-$degree); 
@@ -175,4 +184,18 @@
 	  .Card-Back { background-color: #FFE4AA; color: #012E34; }
 	}
   }
-  
+
+  .why-wrapper {
+	width: 60%;
+    max-width: 1600px;
+    height: 90%;
+    /* color: #fff; */
+    /* text-shadow: 0 1px 1px #131413; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: url(../assets/question_mark.png) no-repeat, white;
+	background-size: cover;	
+	
+  }
